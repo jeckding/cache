@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>成绩单</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div><%= name %>年高考成绩查询（张三）</div>
+    <table>
+        <% scores.forEach(function(item,index){ %>
+            <tr><td><%= index %></td><td><%=item.course %></td><td><%=item.score %></td></tr>
+        <% }); %>
+    </table>
+  </body>
+</html>
